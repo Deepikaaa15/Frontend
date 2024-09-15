@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Deepika Kirubanandan's Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            padding: 20px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #f5f5f5;
+        }
+        .section-links {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .section-links a {
+            color: #b0bec5;
+            margin: 5px;
+            text-decoration: none;
+            font-size: 20px;
+            transition: color 0.3s;
+        }
+        .section-links a:hover {
+            color: #ffab00;
+        }
+        .image-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+        .image-container img {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin: 10px;
+        }
+        .image-container img:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+            text-decoration: none;
+            color: inherit;
+        }
+        .button-container button {
+            font-size: 18px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            width: 200px;
+            text-align: center;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .button-container button:hover {
+            background-color: #45a049;
+            color: yellow;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #b0bec5;
+        }
+        .about, #Socials, #Projects, #Resume {
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .education-content,
+        .experience-container {
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            text-align: center;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .education-content p,
+        .experience-container ul,
+        .projects-container {
+            color: #ecf0f1;
+        }
+        .experience-container {
+            border: 2px solid #ecf0f1;
+            background-color: transparent;
+            margin-bottom: 40px; 
+        }
+        .experience-container h2 {
+            color: #ecf0f1;
+            margin-bottom: 15px;
+        }
+        .experience-container ul {
+            list-style-type: none;
+            padding-left: 0;
+            font-size: 16px;
+        }
+        .experience-container ul li {
+            margin-bottom: 10px;
+        }
+        .social-links {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .social-links h2 {
+            color: #e0e0e0;
+        }
+        .social-links a {
+            display: block;
+            padding: 10px 20px;
+            margin: 5px auto;
+            border-radius: 50%;
+            text-align: center;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .social-links a:hover {
+            transform: scale(1.1);
+        } 
+        .instagram {
+            background-color: #C13584;
+        }
+        .linkedin {
+            background-color: #0077B5;
+        }
+        .email {
+            background-color: #D44638;
+        }
+        .project {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .project img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .resume-container {
+            text-align: center;
+            padding: 20px;
+        }
+        @media (max-width: 768px) {
+            .image-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .image-container img {
+                width: 80%;
+                max-width: 400px;
+            }
+            .project img {
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Deepika Kirubanandan</h1>
+    <div class="about">
+        <h2>About Me</h2>
+        <p>Final-year undergraduate at Sri Siva Subramaniya Nadar College of Engineering, experienced in Python and Image Processing.<br> Currently undergoing full-stack development training to build a career in Information Technology.<br> Eager to apply technical skills and explore career opportunities across diverse fields.<br> Demonstrated leadership abilities with notable achievements in sports.<br>
+        I always believe in,<br>
+        "The future belongs to those who believe in the <i style="color:brown;"><b>beauty of their dreams</b></i>."</p>
+    </div>
+
+    <div class="section-links">
+        <a href="#Skills" style="color:brown;">Skills</a> |
+        <a href="#Interests" style="color:PowderBlue;">Interests</a> |
+        <a href="#Education" style="color:#ac5396;">Education</a> |
+        <a href="#Experience" style="color:pink;">Experience</a> |
+        <a href="#Projects" style="color:yellow;">Projects</a> |
+        <a href="#Resume" style="color:green;">Resume</a> |
+        <a href="#Socials" style="color:orange;">Social Media</a>
+    </div>
+
+    <div id="Interests">
+        <h2>Interests</h2>
+        <div class="image-container">
+            <img src="ball.jpg" alt="Sports">
+            <img src="reading.jpg" alt="Reading">
+            <img src="design.jpg" alt="Designing">
+        </div>
+    </div>
+
+    <div id="Skills">
+        <h2>Skills</h2>
+        <div class="button-container">
+            <button>Python</button>
+            <button>Machine Learning</button>
+            <button>HTML</button>
+            <button>CSS</button>
+            <button>JavaScript</button>
+        </div>
+    </div>
+
+    <div id="Education" class="education-content">
+        <h2>Education</h2>
+        <p>I am currently pursuing a B.E. in Biomedical Engineering at SSN College, Chennai, with a CGPA of <mark>7.326</mark><br>I completed my higher secondary education at Vidyodaya Girls' Higher Secondary School, Chennai, graduating in 2021 with <mark>89%</mark></<p>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Fountain.jpg" class="d-block w-100" alt="Fountain">
+                </div>
+                <div class="carousel-item">
+                    <img src="Entrance.jpg" class="d-block w-100" alt="Entrance">
+                </div>
+                <div class="carousel-item">
+                    <img src="Clocktower.jpg" class="d-block w-100" alt="Clocktower">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    
+    <div id="Experience" class="experience-container">
+        <h2>Experience</h2>
+        <ul>
+            <li>Currently working on an online internship offered by <mark>CodSoft</mark> in web development.</li>
+            <li>Internship at <mark>K-Teq Solutions</mark> in front-end development.</li>
+            <li>Image processing internship at <mark>IITDM</mark>. Worked on the segmentation of ZnO2 rods using Python.</li>
+            <li>One-week hospital training at <mark>Gleneagles Global Hospital</mark> gaining hands-on experience in medical technologies and biomedical engineering equipment.</li>
+        </ul>
+    </div>
+
+    <div id="Projects" class="projects-container">
+        <h2>Projects</h2>
+        <div class="row">
+            <div class="col-md-4 col-12 project">
+                <img src="speech.jpg" alt="Speech Assist Device">
+                <h3>Speech Assist Device using Accelerometer</h3>
+                <p>Developed a device to assist communication for individuals with speech impairments using accelerometer.</p>
+            </div>
+            <div class="col-md-4 col-12 project">
+                <img src="lung.jpg" alt="Lung Cancer Detection">
+                <h3>Lung Cancer Detection using Machine Learning</h3>
+                <p>Implemented a machine learning model to detect lung cancer from data.</p>
+            </div>
+            <div class="col-md-4 col-12 project">
+                <img src="character.jpg" alt="Character Guessing Game">
+                <h3>Text-Based Character Guessing Game</h3>
+                <p>Created a Python-based text game where users guess the character based on hints.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="Resume" class="resume-container">
+        <h2>Resume</h2>
+        <a href="Final_Resume_Deepika.pdf" target="_blank">
+            <button>Download My Resume</button>
+        </a>
+    </div>
+
+    <div id="Socials" class="social-links">
+        <h2>Social Media</h2>
+        <a href="https://www.instagram.com/deepikakirubanandan" target="_blank" class="instagram">Instagram</a>
+        <a href="https://www.linkedin.com/in/deepikakirubanandan" target="_blank" class="linkedin">LinkedIn</a>
+        <a href="mailto:deepikakirubanandan@gmail.com" class="email">Email</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Deepika Kirubanandan. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
