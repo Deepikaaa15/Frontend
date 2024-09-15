@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joy</title>
+    <style>
+        body {
+            background-image: url('	RAINBOW.jpg'); 
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            justify-content: center; 
+            position: relative;
+            padding-left: 50px; 
+        }
+        .top-right-buttons {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .top-right-buttons a {
+            display: inline-block;
+            padding: 20px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #FFB6C1; 
+            text-decoration: none;
+            border-radius: 5px;
+            margin-left: 10px;
+			margin-right: 10px;
+            transition: background-color 0.3s ease;
+        }
+        .top-right-buttons a:hover {
+            background-color: #FFC0CB; 
+        }
+        .main-content {
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 20px;	
+            font-family: 'Georgia', serif;
+        }
+        .section-content {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border-radius: 10px;
+            max-width: 1000px;
+            text-align: center;
+            display: none; 
+            margin-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h1 {
+        font-family: 'Playfair Display', serif;
+        color: #2F4F4F;
+        font-size: 48px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+		line-height:0.5;
+        }
+        a.button {
+        display: inline-block;
+        padding: 15px 30px;
+        font-size: 16px;
+        color: white;
+        background-color: #76c7f2;
+        text-decoration: none;
+        border-radius: 5px;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease;
+        }
+
+        a.button:hover {
+        background-color: #5aa6d1;
+        }
+
+        }
+        section {
+            padding: 10px;
+            border-radius: 10px;
+            max-width: 800px;
+            display: none; 
+            margin-top: 0;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        section h2 {
+            color: #333;
+        }
+    </style>
+    <script>
+        function showSection(sectionId) {
+            var sections = ['Flavours', 'Menu', 'Contact'];
+            sections.forEach(function(id) {
+                var section = document.getElementById(id);
+                var button = document.querySelector(`a[onclick="showSection('${id}')"]`);
+                if (id === sectionId) {
+                    section.style.display = "block";
+                    button.style.display = "none";
+                    document.body.style.alignItems = 'center'; 
+                } else {
+                    section.style.display = "none";
+                    document.querySelector(`a[onclick="showSection('${id}')"]`).style.display = "inline-block";
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="top-right-buttons">
+        <a href="javascript:void(0);" onclick="showSection('Menu')">Menu</a>
+        <a href="javascript:void(0);" onclick="showSection('Contact')">Contact</a>
+    </div>
+
+    <header class="part-one">
+        <div class="main-content">
+            <p><h1>Amazing new flavours,<br><blockquote>Made with <i style="color:red;"><b>LOVE.</b></i></blockquote></h1></p>
+            <a href="javascript:void(0);" class="button" onclick="showSection('Flavours')">CHECK OUT OUR NEW FLAVOURS!!</a>
+        </div>
+    </header>
+    
+    <section id="Flavours" class="section-content">
+        <h4>Mint Chocolate Chip</h4>
+        <img src="https://th.bing.com/th?id=OSK.e3afc9d09cacdcd8c31e3b600437a247&w=184&h=184&rs=2&qlt=80&r=0&o=6&cdv=1&dpr=1.5&pid=16.1" height="100" width="100">
+        <h4>Strawberry Cheesecake</h4>
+        <img src="https://th.bing.com/th?id=OSK.0fa7c758d4c70b21d3d18d38777a4537&w=184&h=275&rs=2&qlt=80&r=0&o=6&cdv=1&pid=16.1" height="100" width="100">
+        <h4>Salted Caramel Swirl</h4>
+        <img src="https://th.bing.com/th?id=OSK.da5270a03612db750618a12fc931e865&w=184&h=245&rs=2&qlt=80&r=0&o=6&cdv=1&dpr=1.5&pid=16.1" height="100" width="100">
+    </section>
+
+    <section id="Menu" class="section-content">
+        <h2>Our Best <i style="color:red;">Sellers</i></b></h2>
+        <p>Explore our delicious range of ice creams, sundaes and lot more</p>
+		<img src="https://th.bing.com/th/id/OIP.jNHI42gANzBc-i1cLI-RCQHaD7?w=309&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" height="150" width="200">
+        <h4 style="color:rgba(100, 99, 150);">
+            Rich Chocolate<br>
+            Mango Sorbet<br>
+            Berry Blast Sundae<br>
+            Banana Split<br>
+            Ice Cream Sandwiches<br>
+            Customizable Ice Cream Cakes</h4>
+    </section>
+
+    <section id="Contact" class="section-content">
+        <h2><b>Contact Us</b></h2>
+        <p>We'd love to hear from you! Reach out to us through any of the following ways:</p>
+        <h4 style="color:rgba(255, 99, 71, 0.5);">Email: info@icecreamjoy.com<br>
+            Phone: +91 8939464156<br>
+            Address: KNK Road, Chennai<br></h4>
+		<img src="thankyou-image.jpg" height="200" width="200">
+    </section>
+</body>
+</html>
