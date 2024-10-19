@@ -1,2 +1,1 @@
-# CODSOFT
-Repository for all CODSOFT tasks.
+Repository for all frontend tasks.
